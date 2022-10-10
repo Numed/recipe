@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import iconImg from "../../img/icons/list.png";
+import iconImg from "../../img/logo.png";
 
 const HeaderSection = styled.header`
   width: 100%;
@@ -8,27 +8,14 @@ const HeaderSection = styled.header`
 `;
 
 const HeaderLogo = styled.a`
-  width: 100%;
+  width: 135px;
+  height: 50px;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  color: #52b788;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 15px;
-`;
-
-const Logo = styled.span`
-  width: 32px;
-  height: 32px;
-  user-select: none;
+  margin: 0 auto 15px;
   background: url(${iconImg}) no-repeat center;
-  transform: scaleX(-1);
-  filter: invert(63%) sepia(5%) saturate(3345%) hue-rotate(100deg)
-    brightness(99%) contrast(92%);
 `;
 
 const NavSection = styled.nav`
@@ -69,10 +56,7 @@ const LinkSection = styled.a`
 const Header = () => {
   return (
     <HeaderSection>
-      <HeaderLogo href="/">
-        <Logo />
-        Recipe
-      </HeaderLogo>
+      <HeaderLogo href="/" />
       <NavSection>
         <NavList>
           <LinkSection className="active" href="/recipes">
