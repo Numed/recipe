@@ -1,13 +1,15 @@
-import Benefits from "../benefits/Benefits";
-import Header from "../header/Header";
-import ProductList from "../listWithProducts/ProductList";
+import { ErrorPage, Main } from "../pages";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <ProductList />
-      <Benefits />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="404" element={<ErrorPage />} />
+        </Routes>
+      </Router>
     </>
   );
 };

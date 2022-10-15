@@ -24,6 +24,20 @@ a {
   text-decoration: none;
 }
 
+.button-link{
+  text-align: center;
+  padding: 4px 12px;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  color: #fff;
+  background-color: #47a177;
+}
+
+.button-link:hover {
+  transition: all 0.2s linear;
+  background-color: #40916c;
+}
+
 ::-webkit-scrollbar{
   background-color: #fff;
   height: 5px;
