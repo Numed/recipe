@@ -26,7 +26,7 @@ const ErrorTitle = styled.h2`
 const ErrorPage = () => {
   return (
     <Section>
-      <ErrorTitle> Ooops.. </ErrorTitle>
+      <ErrorTitle>Ooops.. </ErrorTitle>
       <ErrorTitle>something went wrong</ErrorTitle>
       <Link to="/" className="button-link">
         Back to home
