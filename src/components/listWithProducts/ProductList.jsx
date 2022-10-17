@@ -47,7 +47,6 @@ const ProductList = () => {
   const searchProduct = () => {
     const productNames = document.querySelectorAll(".search-product__name"),
       searchData = productValue.trim().toLowerCase();
-    console.log(searchData);
     if (searchData !== "") {
       productNames.forEach((e) => {
         if (e.textContent.toLowerCase().search(searchData) === -1) {
@@ -67,24 +66,26 @@ const ProductList = () => {
     <Section>
       <ListSection>
         <ListContainer className="list-container">
-          <ListTitle>Products ingredients</ListTitle>
+          <ListTitle className="list-title">Products ingredients</ListTitle>
           <List className="list">
             <Products>
-              <ProductName>Potato</ProductName>
+              <ProductName className="product-name">Potato</ProductName>
               <DeleteButton>x</DeleteButton>
             </Products>
             <Products>
-              <ProductName>Potato</ProductName>
+              <ProductName className="product-name">Potato</ProductName>
               <DeleteButton>x</DeleteButton>
             </Products>
-            <AddProduct onClick={toggleModal}>Add product</AddProduct>
+            <AddProduct className="button" onClick={toggleModal}>
+              Add product
+            </AddProduct>
           </List>
         </ListContainer>
       </ListSection>
       <TextSection>
         <TextContainer>
           <TextTitle>Just add products and choose recipe</TextTitle>
-          <TextSubtitle>
+          <TextSubtitle className="text-subtitle">
             All you have to do is add to the list what you just bought at the
             store or what is in the fridge. We will select special recipes that
             contain products that are present in your home.
@@ -92,8 +93,10 @@ const ProductList = () => {
         </TextContainer>
       </TextSection>
       <ModalWindow ref={modalRef}>
-        <ModalContainer>
-          <CloseButton onClick={toggleModal}>X</CloseButton>
+        <ModalContainer className="modal-window">
+          <CloseButton className="close-button" onClick={toggleModal}>
+            X
+          </CloseButton>
           <ModalTitle>Choose a products</ModalTitle>
           <SearchHeader>
             <SearchFood

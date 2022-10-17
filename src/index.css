@@ -9,8 +9,10 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark{
+  background-color: #121212;
 }
 
 button{
@@ -33,6 +35,47 @@ input{
 textarea{
   outline: none;
   border: none;
+}
+
+body.dark .product-name,
+body.dark .link-section,
+body.dark .text-subtitle,
+body.dark .input-text,
+body.dark .search-product__name,
+body.dark .get-text__area{
+  color: #9f9f9f;
+}
+
+body.dark .link-section.active,
+body.dark .green-title,
+body.dark .green-subtitle,
+body.dark .link-section:hover {
+  color: #ccc;
+}
+
+body.dark .list-container,
+body.dark .benetif-card,
+body.dark .nav-section,
+body.dark .get-text__area,
+body.dark .modal-window,
+body.dark .get-in__touch{
+  background-color: #1e1e1e;
+}
+
+body.dark .button,
+body.dark .list-title{
+  color: #ccc;
+  background-color: #2d6a4f;
+}
+
+body.dark .button:hover{
+  transition: all 0.2s linear;
+  background-color: #40916c;
+}
+
+body.dark .sun,
+body.dark .close-button{
+  filter: invert(1);
 }
 
 .button-link{

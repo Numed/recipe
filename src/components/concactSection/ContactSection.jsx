@@ -23,38 +23,50 @@ const ContactSection = () => {
     <Section>
       <BackgroundImg />
       <ContactInner>
-        <GreenBox>
+        <GreenBox className="green-box">
           <GreenTextSection>
-            <GreenTitle>Let's get in touch </GreenTitle>
-            <GrenSubtitle>
+            <GreenTitle className="green-title">Let's get in touch </GreenTitle>
+            <GrenSubtitle className="green-subtitle">
               We're open for any suggestion or just to have a chat
             </GrenSubtitle>
           </GreenTextSection>
         </GreenBox>
-        <GetInTouch>
+        <GetInTouch className="get-in__touch">
           <GetInTouchInner>
             <GetInnerTitle>Get in touch</GetInnerTitle>
             <GetInputs>
               <GroupInputs>
                 <ContactInputSection>
                   <ContactLabel>Full name</ContactLabel>
-                  <ContactInput type="text" placeholder="Name" />
+                  <ContactInput
+                    className="input-text"
+                    type="text"
+                    placeholder="Name"
+                  />
                 </ContactInputSection>
                 <ContactInputSection>
                   <ContactLabel>Email Address</ContactLabel>
-                  <ContactInput type="text" placeholder="Email" />
+                  <ContactInput
+                    className="input-text"
+                    type="text"
+                    placeholder="Email"
+                  />
                 </ContactInputSection>
               </GroupInputs>
               <ContactInputSection className="longer">
                 <ContactLabel>Subject</ContactLabel>
-                <ContactInput type="text" placeholder="Subject" />
+                <ContactInput
+                  className="input-text"
+                  type="text"
+                  placeholder="Subject"
+                />
               </ContactInputSection>
               <ContactInputSection className="longer">
                 <ContactLabel>Message</ContactLabel>
-                <GetTextArea />
+                <GetTextArea className="get-text__area" />
               </ContactInputSection>
             </GetInputs>
-            <SendMessage>Send Message</SendMessage>
+            <SendMessage className="button">Send Message</SendMessage>
           </GetInTouchInner>
         </GetInTouch>
       </ContactInner>

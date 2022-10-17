@@ -73,7 +73,7 @@ const Benefits = () => {
       <SectionTitle>Why should you choose us?</SectionTitle>
       <CardContainer>
         <CardList>
-          <Card>
+          <Card className="benetif-card">
             <CardTitle>A lot of recipes</CardTitle>
             <CardImg src={recipes} alt="Recipes Icon" />
             <CardText>
@@ -83,7 +83,7 @@ const Benefits = () => {
               laudantium a nam repudiandae, perferendis aperiam.
             </CardText>
           </Card>
-          <Card>
+          <Card className="benetif-card">
             <CardTitle>Easy to use</CardTitle>
             <CardImg src={easy} alt="Easy to use" />
             <CardText>
@@ -93,7 +93,7 @@ const Benefits = () => {
               laudantium a nam repudiandae, perferendis aperiam.
             </CardText>
           </Card>
-          <Card>
+          <Card className="benetif-card">
             <CardTitle>Your comfort</CardTitle>
             <CardImg src={comfort} alt="Comfort Icon" />
             <CardText>
@@ -103,7 +103,7 @@ const Benefits = () => {
               laudantium a nam repudiandae, perferendis aperiam.
             </CardText>
           </Card>
-          <Card>
+          <Card className="benetif-card">
             <CardTitle>Mobile friendly</CardTitle>
             <CardImg src={friendly} alt="Mobile friendly" />
             <CardText>
