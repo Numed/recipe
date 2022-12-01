@@ -27,16 +27,28 @@ import {
   SaveButton,
 } from "./style";
 
+import useService from "../../services/ApiService";
+
 import { useRef, useState, useEffect } from "react";
 
 const ProductList = () => {
   const modalRef = useRef();
   const [productValue, setProductValue] = useState("");
 
+  const { getAllIngridents } = useService();
+
+  useEffect(() => {
+    onRequest();
+  }, []);
+
   useEffect(() => {
     searchProduct();
     // eslint-disable-next-line
   }, [productValue]);
+
+  const onRequest = () => {
+    getAllIngridents().then((el) => console.log(el));
+  };
 
   const toggleModal = () => {
     modalRef.current.classList.contains("open")

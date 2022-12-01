@@ -103,7 +103,6 @@ const Moon = styled.span`
 
 const Header = () => {
   const toggleSwitch = (target) => {
-    console.log(target);
     if (target.classList.contains("active")) {
       document.body.classList.remove("dark");
       target.classList.remove("active");
